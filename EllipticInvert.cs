@@ -1,6 +1,8 @@
 using System;
 using System.Drawing;
 using System.Runtime.InteropServices;
+
+//https://www.pinvoke.net/default.aspx/gdi32/CreateEllipticRgn.html
 [DllImport("gdi32.dll")]
 static extern IntPtr CreateEllipticRgn(int nLeftRect, int nTopRect,int nRightRect, int nBottomRect);
 
